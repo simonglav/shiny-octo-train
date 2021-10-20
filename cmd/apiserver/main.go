@@ -8,6 +8,7 @@ import (
 	"github.com/http-rest-api/internal/app/apiserver"
 )
 
+// Path to config via flag in cmd
 var (
 	configPath string
 )
@@ -26,6 +27,7 @@ func main() {
 		log.Fatal(err)
 	}
 
+	// Run server
 	if err := apiserver.Start(config); err != nil {
 		log.Fatal(err)
 	}

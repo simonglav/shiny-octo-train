@@ -8,6 +8,7 @@ import (
 	"github.com/http-rest-api/internal/app/store/sqlstore"
 )
 
+// Start ...
 func Start(config *Config) error {
 	db, err := newDb(config.DatabaseURL)
 	if err != nil {

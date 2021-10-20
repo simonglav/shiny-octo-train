@@ -5,11 +5,13 @@ import (
 	"github.com/http-rest-api/internal/app/store"
 )
 
+// UserRepository ...
 type UserRepository struct {
 	store *Store
 	users map[int]*model.User
 }
 
+// Create ...
 func (r *UserRepository) Create(u *model.User) error {
 	if err := u.Validate(); err != nil {
 		return err
@@ -25,6 +27,7 @@ func (r *UserRepository) Create(u *model.User) error {
 	return nil
 }
 
+// Find ...
 func (r *UserRepository) Find(id int) (*model.User, error) {
 	u, ok := r.users[id]
 	if !ok {

@@ -7,10 +7,12 @@ import (
 	"github.com/http-rest-api/internal/app/store"
 )
 
+// UserRepository ...
 type UserRepository struct {
 	store *Store
 }
 
+// Create - creates a user after data validation and password hashing
 func (r *UserRepository) Create(u *model.User) error {
 	if err := u.Validate(); err != nil {
 		return err
@@ -27,6 +29,7 @@ func (r *UserRepository) Create(u *model.User) error {
 	).Scan(&u.ID)
 }
 
+// Find - looks for user by user id
 func (r *UserRepository) Find(id int) (*model.User, error) {
 	u := &model.User{}
 	if err := r.store.db.QueryRow(
@@ -45,6 +48,7 @@ func (r *UserRepository) Find(id int) (*model.User, error) {
 	return u, nil
 }
 
+// FindByEmail - looks for user by user email
 func (r *UserRepository) FindByEmail(email string) (*model.User, error) {
 	u := &model.User{}
 	if err := r.store.db.QueryRow(
