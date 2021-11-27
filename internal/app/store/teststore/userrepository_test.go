@@ -3,9 +3,10 @@ package teststore_test
 import (
 	"testing"
 
-	"github.com/http-rest-api/internal/app/model"
-	"github.com/http-rest-api/internal/app/store/teststore"
 	"github.com/stretchr/testify/assert"
+
+	"github.com/simonglav/http-rest-api/internal/app/model"
+	"github.com/simonglav/http-rest-api/internal/app/store/teststore"
 )
 
 func TestUserRepository_Create(t *testing.T) {

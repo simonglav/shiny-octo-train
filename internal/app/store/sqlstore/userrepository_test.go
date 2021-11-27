@@ -3,10 +3,11 @@ package sqlstore_test
 import (
 	"testing"
 
-	"github.com/http-rest-api/internal/app/model"
-	"github.com/http-rest-api/internal/app/store"
-	"github.com/http-rest-api/internal/app/store/sqlstore"
 	"github.com/stretchr/testify/assert"
+
+	"github.com/simonglav/http-rest-api/internal/app/model"
+	"github.com/simonglav/http-rest-api/internal/app/store"
+	"github.com/simonglav/http-rest-api/internal/app/store/sqlstore"
 )
 
 func TestUserRepository_Create(t *testing.T) {

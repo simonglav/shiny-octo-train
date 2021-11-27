@@ -10,9 +10,10 @@ import (
 
 	"github.com/gorilla/securecookie"
 	"github.com/gorilla/sessions"
-	"github.com/http-rest-api/internal/app/model"
-	"github.com/http-rest-api/internal/app/store/teststore"
 	"github.com/stretchr/testify/assert"
+
+	"github.com/simonglav/http-rest-api/internal/app/model"
+	"github.com/simonglav/http-rest-api/internal/app/store/teststore"
 )
 
 func TestServer_AuthenticateUser(t *testing.T) {

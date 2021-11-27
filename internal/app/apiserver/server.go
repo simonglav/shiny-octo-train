@@ -11,9 +11,10 @@ import (
 	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
 	"github.com/gorilla/sessions"
-	"github.com/http-rest-api/internal/app/model"
-	"github.com/http-rest-api/internal/app/store"
 	"github.com/sirupsen/logrus"
+
+	"github.com/simonglav/http-rest-api/internal/app/model"
+	"github.com/simonglav/http-rest-api/internal/app/store"
 )
 
 const (

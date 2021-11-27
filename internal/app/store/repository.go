@@ -1,6 +1,6 @@
 package store
 
-import "github.com/http-rest-api/internal/app/model"
+import "github.com/simonglav/http-rest-api/internal/app/model"
 
 // UserRepository ...
 type UserRepository interface {

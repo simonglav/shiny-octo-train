@@ -3,8 +3,9 @@ package model_test
 import (
 	"testing"
 
-	"github.com/http-rest-api/internal/app/model"
 	"github.com/stretchr/testify/assert"
+
+	"github.com/simonglav/http-rest-api/internal/app/model"
 )
 
 func TestUser_Validate(t *testing.T) {

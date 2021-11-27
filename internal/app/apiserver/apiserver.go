@@ -5,7 +5,7 @@ import (
 	"net/http"
 
 	"github.com/gorilla/sessions"
-	"github.com/http-rest-api/internal/app/store/sqlstore"
+	"github.com/simonglav/http-rest-api/internal/app/store/sqlstore"
 )
 
 // Start ...

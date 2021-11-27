@@ -1,8 +1,8 @@
 package teststore
 
 import (
-	"github.com/http-rest-api/internal/app/model"
-	"github.com/http-rest-api/internal/app/store"
+	"github.com/simonglav/http-rest-api/internal/app/model"
+	"github.com/simonglav/http-rest-api/internal/app/store"
 )
 
 // UserRepository ...

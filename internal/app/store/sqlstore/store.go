@@ -3,8 +3,9 @@ package sqlstore
 import (
 	"database/sql"
 
-	"github.com/http-rest-api/internal/app/store"
 	_ "github.com/lib/pq"
+
+	"github.com/simonglav/http-rest-api/internal/app/store"
 )
 
 // Store ...

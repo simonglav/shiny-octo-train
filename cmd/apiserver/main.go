@@ -5,7 +5,7 @@ import (
 	"log"
 
 	"github.com/BurntSushi/toml"
-	"github.com/http-rest-api/internal/app/apiserver"
+	"github.com/simonglav/http-rest-api/internal/app/apiserver"
 )
 
 // Path to config via flag in cmd

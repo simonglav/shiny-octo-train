@@ -1,4 +1,4 @@
-module github.com/http-rest-api
+module github.com/simonglav/http-rest-api
 
 go 1.17
 
